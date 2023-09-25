@@ -10,11 +10,10 @@ int sum;
 for (num = 0; num < 10; num++)
 {
 putchar('0' + num);
-for (sum = 0; sum < 9; sum++)
+if (num !=9)
 {
 putchar(',');
 putchar(' ');
-}
 }
 putchar('\n');
 return (0);
