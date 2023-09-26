@@ -9,13 +9,3 @@ int main(void)
 print_alphabet();
 return (0);
 }
-
-void print_alphabet(void)
-{
-char car;
-for (car = 'a'; car <= 'z'; car++)
-{
-_putchar(car);
-}
-_putchar('\n');
-}
