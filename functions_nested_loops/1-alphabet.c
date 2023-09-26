@@ -1,11 +1,15 @@
 #include "main.h"
 /**
- * main - write a function that prints the alphabet,
+ * print_alphabet - write a function that prints the alphabet,
  * in lowercase, followed by a new line.
- *Return:0
+ * Return:0
  */
-int main(void)
+void print_alphabet(void)
 {
-print_alphabet();
-return (0);
+char car;
+for (car = 'a'; car <= 'z'; car++)
+{
+  _putchar('0' + car);
+}
+_putchar('\n');
 }
