@@ -7,6 +7,10 @@
 int print_last_digit(int x)
 {
 int tot = x % 10;
+if (tot < 0)
+{
+tot = -tot;
+}
 _putchar(x + '0');
 return (tot);
 }
