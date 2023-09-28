@@ -5,7 +5,7 @@
  */
 int _islower(int c)
 {
-if ( c == [:lower:] )
+  if ( c >= 'a' && c <= 'z' )
 {
 return (1);
 }
