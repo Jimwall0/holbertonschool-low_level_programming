@@ -11,6 +11,6 @@ if (tot < 0)
 {
 tot = -tot;
 }
-_putchar(x + '0');
+_putchar(tot + '0');
 return (tot);
 }
