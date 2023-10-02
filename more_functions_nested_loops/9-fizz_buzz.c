@@ -25,7 +25,7 @@ putchar(' ');
 }
 else
 {
-printf("%d\t", num);
+printf("%d", num);
 }
 }
 putchar('\n');
