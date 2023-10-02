@@ -13,17 +13,15 @@ while (str[i] != '\0')
 {
 i++;
 }
-l = i;
 if (i % 2 != 0)
 {
-i--;
-i = i / 2;
+l = (i - 1) / 2;
 }
 else
 {
-i = i / 2;
+l = i / 2;
 }
-for (j = i; j < l; j++)
+for (j = l; str[j] != '\0'; j++)
 {
 _putchar(str[j]);
 }
