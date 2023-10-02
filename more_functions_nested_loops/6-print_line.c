@@ -9,6 +9,7 @@ int num = 1;
 while (num <= n)
 {
 _putchar('_');
+num++;
 }
 _putchar('\n');
 }
