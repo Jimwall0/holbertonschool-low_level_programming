@@ -6,19 +6,17 @@
 void print_line(int n)
 {
 int num;
-for (num = 0; num <= n; num++)
+while (num <= n)
 {
 if (n <= 0)
 {
 _putchar('\n');
-}
-else if (num == n)
-{
-_putchar('\n');
+num = (n + 1);
 }
 else
 {
-_putchar('\n');
+_putchar('_');
+num++;
 }
 }
 }
