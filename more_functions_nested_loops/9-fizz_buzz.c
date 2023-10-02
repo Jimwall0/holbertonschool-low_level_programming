@@ -11,7 +11,10 @@ for (num = 1; num <= 100; num++)
 if (num % 3 == 0 && num % 5 == 0)
 {
 printf("FizzBuzz");
+if (num != 100)
+{
 putchar(' ');
+}
 }
 else if (num % 5 == 0)
 {
