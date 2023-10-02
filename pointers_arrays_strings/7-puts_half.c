@@ -20,4 +20,5 @@ _putchar(str[j]);
 }
 j++;
 }
+_putchar('\n');
 }
