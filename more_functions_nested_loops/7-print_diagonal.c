@@ -10,5 +10,12 @@ for (num = 1; num < n; num++)
 {
 _putchar(' ');
 }
-_putchar('/');
+if (n <= 0)
+{
+_putchar(' ');
+}
+else
+{
+_putchar('\\');
+}
 }
