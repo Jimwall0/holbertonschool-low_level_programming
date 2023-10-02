@@ -5,19 +5,24 @@
  */
 void print_triangle(int size)
 {
-int n1;
-int n2;
-int n3;
-for (n1 = 1; n1 >= size; n1++)
+int i;
+int sp;
+int ha;
+if (size <= 0)
 {
-for (n2 = size; n2 == n1; n2--)
+_putchar('\n');
+return;
+}
+for (i = 1; i <= size; i++)
+{
+for (sp = size - i; sp > 0; sp--)
 {
 _putchar(' ');
 }
-for (n3 = n1; n3 > n2; n3++)
+for (ha = 1; ha <= i; ha++)
 {
 _putchar('#');
 }
-}
 _putchar('\n');
+}
 }
