@@ -5,7 +5,8 @@
  */
 int main(void)
 {
-for (int num = 1; num <= 100; num++)
+int num;
+for (num = 1; num <= 100; num++)
 {
 if (num % 3 == 0)
 {
@@ -24,4 +25,5 @@ else
 printf('0' + "%d", num);
 }
 }
+return (0);
 }
