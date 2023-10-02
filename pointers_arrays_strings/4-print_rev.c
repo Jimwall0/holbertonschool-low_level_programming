@@ -10,7 +10,7 @@ int i = 0;
 int j;
 while (s[i] != '\0')
 {
-i++
+i++;
 }
 for (j = i - 1; j > 0; j--)
 {
