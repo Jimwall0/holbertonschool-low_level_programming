@@ -5,18 +5,10 @@
  */
 void print_line(int n)
 {
-int num;
+int num = 1;
 while (num <= n)
 {
-if (n <= 0)
-{
-_putchar('\n');
-num = (n + 1);
-}
-else
-{
 _putchar('_');
-num++;
 }
-}
+_putchar('\n');
 }
