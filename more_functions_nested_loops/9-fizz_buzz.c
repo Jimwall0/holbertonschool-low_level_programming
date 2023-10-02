@@ -26,6 +26,7 @@ putchar(' ');
 else
 {
 printf("%d", num);
+putchar(' ');
 }
 }
 putchar('\n');
