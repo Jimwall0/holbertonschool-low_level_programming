@@ -19,7 +19,10 @@ putchar(' ');
 else if (num % 5 == 0)
 {
 printf("Buzz");
+if (num != 100)
+{
 putchar(' ');
+}
 }
 else if (num % 3 == 0)
 {
