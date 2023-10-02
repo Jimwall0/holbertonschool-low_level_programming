@@ -10,19 +10,19 @@ for (num = 1; num <= 100; num++)
 {
 if (num % 3 == 0)
 {
-printf("Fizz%t");
+printf("Fizz\t");
 }
 else if (num % 5 == 0)
 {
-printf("Buzz%t");
+printf("Buzz\t");
 }
 else if (num % 3 == 0 && num % 5 == 0)
 {
-printf("FizzBuzz%t");
+printf("FizzBuzz\t");
 }
 else
 {
-printf("%d%t", num);
+printf("%d\t", num);
 }
 }
 putchar('\n');
