@@ -14,7 +14,7 @@ i++;
 }
 while (str[j] != '\0')
 {
-if (j >= (i - 1) / 2)
+if (j >= i - 1 / 2)
 {
 _putchar(str[j]);
 }
