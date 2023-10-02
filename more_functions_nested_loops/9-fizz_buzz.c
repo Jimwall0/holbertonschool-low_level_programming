@@ -10,15 +10,18 @@ for (num = 1; num <= 100; num++)
 {
 if (num % 3 == 0)
 {
-printf("Fizz\t");
+printf("Fizz");
+putchar(' ');
 }
 else if (num % 5 == 0)
 {
-printf("Buzz\t");
+printf("Buzz");
+putchar(' ');
 }
 else if (num % 3 == 0 && num % 5 == 0)
 {
-printf("FizzBuzz\t");
+printf("FizzBuzz");
+putchar(' ');
 }
 else
 {
