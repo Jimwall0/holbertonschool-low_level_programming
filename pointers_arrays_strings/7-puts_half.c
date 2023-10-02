@@ -15,15 +15,18 @@ i++;
 }
 if (i % 2 != 0)
 {
-l = (i - 1) / 2;
+l = i / 2;
+for (j = l - 1; str[j] != '\0'; j++)
+{
+_putchar(str[j]);
+}
 }
 else
 {
-l = i / 2;
-}
 for (j = l; str[j] != '\0'; j++)
 {
 _putchar(str[j]);
+}
 }
 _putchar('\n');
 }
