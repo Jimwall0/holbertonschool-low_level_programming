@@ -1,0 +1,9 @@
+#include "main.h"
+/**
+ * _strcpy - copy strings and paste
+ * @dest: variable to be pasted
+ * @src: variable to be copied
+ */
+char *_strcpy(char *dest, char *src)
+{
+  
