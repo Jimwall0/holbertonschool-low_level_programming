@@ -13,7 +13,7 @@ for (num = 0; src[num] != '\0' && num < n; num++)
 {
 dest[num] = src[num];
 }
-if (num < n)
+while (num < n);
 {
 dest[num] = '\0';
 }
