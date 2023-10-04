@@ -12,6 +12,7 @@ int srcl = 0;
 while (src[srcl] != '\0' && srcl >= n)
 {
 dest[srcl] = src[srcl];
+srcl++;
 }
 return (dest);
 }
