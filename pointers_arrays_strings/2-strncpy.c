@@ -16,6 +16,7 @@ dest[num] = src[num];
 while (num < n)
 {
 dest[num] = '\0';
+num++;
 }
 return (dest);
 }
