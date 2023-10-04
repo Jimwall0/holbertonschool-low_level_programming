@@ -11,7 +11,7 @@ for (num = 0; arr[num] != '\0'; num++)
 {
 if (arr[num] >= 'a' && arr[num] <= 'z')
 {
-arr[num] = arr[num] -32;
+arr[num] = arr[num] - 32;
 }
 }
 return (arr);
