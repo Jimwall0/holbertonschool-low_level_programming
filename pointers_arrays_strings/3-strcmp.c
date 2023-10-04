@@ -21,7 +21,7 @@ return (0);
 }
 else if (lin1 > lin2)
 {
-  return (-13);
+return (-13);
 }
 else
 {
