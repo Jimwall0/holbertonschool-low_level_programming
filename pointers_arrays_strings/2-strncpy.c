@@ -1,0 +1,17 @@
+#include "main.h"
+/**
+ * _strncpy - copy string
+ * @dest: where you put the coppied string
+ * @src: the string you are copying
+ * @n: Byte value
+ * Return: char
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+int destl = 0;
+int srcl = 0;
+while (dest[destl] != '\0' && destl < n)
+{
+src[destl] = dest[destl];
+}
+}
