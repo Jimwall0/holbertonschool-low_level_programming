@@ -7,15 +7,18 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-if (_strlen(s1) < _strlen(s2))
+int lin1, lin2;
+lin1 = _strlen(s1);
+lin2 = _strlen(s2);
+if (lin1 < lin2)
 {
 return (-1);
 }
-else if (_strlen(s1) == _strlen(s2))
+else if (lin1 == lin2)
 {
 return (0);
 }
-else if (_strlen(s1) > _strlen(s2))
+else if (lin1 > lin2)
 {
 return (1);
 }
