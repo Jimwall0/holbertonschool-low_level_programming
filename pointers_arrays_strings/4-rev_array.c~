@@ -1,0 +1,14 @@
+#include "main.h"
+/**
+ * reverse_array - reverses an array
+ * @a: the array to reverse
+ * @n: the byte
+ */
+void reverse_array(int *a; int n)
+{
+  int num;
+  for (num = 0; num < n; num++)
+    {
+      for (num2 = 0; num2 < n; num2++)
+	{
+	  
