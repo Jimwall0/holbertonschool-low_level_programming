@@ -13,7 +13,7 @@ lin1 = _strlen(s1);
 lin2 = _strlen(s2);
 if (lin1 < lin2)
 {
-return (-1);
+return (-13);
 }
 else if (lin1 == lin2)
 {
@@ -21,7 +21,7 @@ return (0);
 }
 else if (lin1 > lin2)
 {
-return (1);
+  return (13);
 }
 else
 {
