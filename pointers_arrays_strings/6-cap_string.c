@@ -9,7 +9,7 @@ char *cap_string(char *arr)
 int num;
 for (num = 0; arr[num] != '\0'; num++)
 {
-if (arr[num] >= 'A' && arr[num] <= 'Z')
+if (arr[num] >= 'a' && arr[num] <= 'z')
 {
 arr[num] = arr[num] + 32;
 }
