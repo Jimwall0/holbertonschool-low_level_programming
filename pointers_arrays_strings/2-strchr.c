@@ -14,6 +14,7 @@ for (num = 0; s[num] != '\0'; num++)
 if (s[num] == c)
 {
 ans = &s[num];
+break;
 }
 }
 if (ans[0] == c)
