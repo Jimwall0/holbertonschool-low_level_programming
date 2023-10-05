@@ -4,6 +4,7 @@
  * _strchr - find a char within a string
  * @s: pointer to array where we are checking
  * @c: the char we are looking for
+ * Return: designated char or NULL
  */
 char *_strchr(char *s, char c)
 {
@@ -17,7 +18,7 @@ ans = &s[num];
 break;
 }
 }
-if (ans[0] == c)
+if (ans == c)
 {
 return (ans);
 }
