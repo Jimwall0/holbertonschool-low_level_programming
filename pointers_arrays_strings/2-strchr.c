@@ -10,7 +10,7 @@ char *_strchr(char *s, char c)
 {
 int num;
 char *ans;
-for (num = 0; s[num] != '\0'; num++)
+for (num = 0; s[num] >= '\0'; num++)
 {
 if (s[num] == c)
 {
@@ -18,7 +18,7 @@ ans = &s[num];
 break;
 }
 }
-if (ans == c)
+if (ans[0] == c)
 {
 return (ans);
 }
