@@ -8,7 +8,7 @@ char *leet(char *arr)
 {
 char lcas[] = {'a', 'e', 'o', 't', 'l'};
 char ucas[] = {'A', 'E', 'O', 'T', 'L'};
-int num[] = {4 + '0', 3 + '0', 0 + '0', 7 + '0', 1 + '0'};
+char num[] = {'4', '3', '0', '7', '1'};
 int loop;
 int five;
 for (loop = 0; arr[loop] != '\0'; loop++)
