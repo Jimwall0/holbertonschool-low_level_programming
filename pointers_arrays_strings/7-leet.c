@@ -17,7 +17,7 @@ for (five = 0; five < 5; five++)
 {
 if (arr[loop] == lcas[five] || arr[loop] == ucas[five])
 {
-arr[loop] = num[loop];
+arr[loop] = num[five];
 }
 }
 }
