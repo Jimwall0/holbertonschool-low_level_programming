@@ -23,7 +23,10 @@ for (loop = 0; s[loop] != '\0'; loop++)
 if (arr[num] == s[loop])
 {
 num++;
+if (arr[num] >= 'a' && arr[num] <= 'z')
+{
 arr[num] = arr[num] + 32;
+}
 }
 }
 }
