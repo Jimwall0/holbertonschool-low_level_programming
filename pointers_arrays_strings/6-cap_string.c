@@ -11,23 +11,23 @@ char s[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 int loop;
 for (num = 0; arr[num] != '\0'; num++)
 {
-  if (num == 0)
-    {
-      if (arr[num] >= 'a' && arr[num] <= 'z')
-	{
-	  arr[num] = arr[num] - 32;
-	}
-    }
-  for (loop = 0; s[loop] != '\0'; loop++)
-    {
-      if (arr[num - 1] == s[loop])
-	{
-	  if (arr[num] >= 'a' && arr[num] <= 'z')
-	    {
-	      arr[num] = arr[num] -32;
-	    }
-	}
-    }
- }
- return (arr);
+if (num == 0)
+{
+if (arr[num] >= 'a' && arr[num] <= 'z')
+{
+arr[num] = arr[num] - 32;
+}
+}
+for (loop = 0; s[loop] != '\0'; loop++)
+{
+if (arr[num - 1] == s[loop])
+{
+if (arr[num] >= 'a' && arr[num] <= 'z')
+{
+arr[num] = arr[num] - 32;
+}
+}
+}
+}
+return (arr);
 }
