@@ -6,5 +6,6 @@ for (num = 0; src[num] != '\0' && num < n; num++)
 {
 dest[num] = src[num];
 }
-return (dest);
+ dest[n - 1] = src[n - 1];
+ return (dest);
 }
