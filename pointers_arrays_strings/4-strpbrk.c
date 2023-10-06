@@ -16,9 +16,9 @@ for (loop = 0; accept[loop] != '\0'; loop++)
 {
 if (s[num] == accept[loop])
 {
-anw = &s[num];
+return (&s[num])
 }
 }
 }
-return (anw);
+return (NULL);
 }

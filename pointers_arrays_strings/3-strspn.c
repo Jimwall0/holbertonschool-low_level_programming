@@ -10,7 +10,7 @@ unsigned int _strspn(char *s, char *accept)
 unsigned int num;
 int loop;
 int circle;
-for (circle = 0; s[circle] != '\0'; num++)
+for (circle = 0; s[circle] != '\0'; circle++)
 {
 for (loop = 0; accept[loop] != '\0'; loop++)
 {
