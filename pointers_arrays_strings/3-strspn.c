@@ -16,6 +16,7 @@ for (loop = 0; accept[loop] != '\0'; loop++)
 if (s[num] == accept[loop])
 {
 num += 1;
+break;
 }
 }
 }
