@@ -8,7 +8,7 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-  unsigned int ans;
+  unsigned int ans = 0;
   int list;
   int loop;
   for (list = 0; s[list] != '\0'; list++)
