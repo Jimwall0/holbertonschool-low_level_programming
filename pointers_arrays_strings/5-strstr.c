@@ -8,24 +8,26 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-int list;
-int loop;
- int nlength;
+  int list, loop, hlen = 0, nlen = 0;
  char *ans;
- while (needle[nlength] != '\0')
+ while (needle[nlen] != '\0')
    {
-     nlength++;
+     nlen++;
    }
-  for (list = 0; haystack[list] != '\0'; list++)
-    {
-      for (loop = 0; needle[loop] != '\0'; loop++)
-	{
-	  if (haystack[list] == needle[loop] && loop == nlength - 1)
-	    {
-	      ans = &haystack[list];
-	      return (ans);
-	    }
-	}
-    }
-  return (NULL);
+ while (haystack[hlen] != '\0')
+   {
+     hlen++;
+   }
+ for (list = 0; haystack[list] < hlen; list++)
+   {
+     for (loop = 0; needle[loop] < nlen; loop++)
+       {
+	 if (haystack[list] == needle[loop] && haystack[list + 1] == needle[loop + 1])
+	   {
+	     ans = &haystack[list];
+	     return (ans);
+	   }
+       }
+   }
+ return (NULL);
 }
