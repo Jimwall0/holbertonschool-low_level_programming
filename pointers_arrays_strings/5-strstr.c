@@ -22,7 +22,7 @@ char *_strstr(char *haystack, char *needle)
    {
      for (loop = 0; needle[loop] < nlen; loop++)
        {
-	 if (haystack[list] == needle[loop] && haystack[list + 1] == needle[loop + 1])
+	 if (haystack[list] == needle[loop])
 	   {
 	     ans = &haystack[list];
 	     return (ans);
