@@ -25,10 +25,7 @@ unsigned int _strspn(char *s, char *accept)
     {
       for (loop = 0; accept[loop] != '\0'; loop++)
 	{
-	  if (zap[num] == accept[loop])
-	    {
-	      alpha++;
-	    }
+	  alpha = alpha + 1;
 	}
     }
   return (alpha);
