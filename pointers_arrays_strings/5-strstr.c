@@ -10,15 +10,21 @@ char *_strstr(char *haystack, char *needle)
 {
 int list;
 int loop;
-char *ans;
+ int nlength;
+ while (needle[nlength] != '\0')
+   {
+     nlength++;
+   }
   for (list = 0; haystack[list] != '\0'; list++)
     {
       for (loop = 0; needle[loop] != '\0'; loop++)
 	{
 	  if (haystack[list] == needle[loop])
 	    {
-	      ans = &haystack[list];
-	      return (ans);
+	      if (loop == nlength - 1)
+		{
+		  return (&haystack[list]);
+		}
 	    }
 	}
     }
