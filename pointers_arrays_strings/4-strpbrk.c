@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "main.h"
 /**
  * _strpbrk - searches for a set of array within another array
@@ -8,15 +9,16 @@
 char *_strpbrk(char *s, char *accept)
 {
 char *anw;
-int num;
+int list;
 int loop;
-for (num = 0; s[num] != '\0'; num++)
+for (list = 0; s[list] != '\0'; list++)
 {
 for (loop = 0; accept[loop] != '\0'; loop++)
 {
-if (s[num] == accept[loop])
+if (s[list] == accept[loop])
 {
-return (&s[num])
+anw = &s[list];
+return (anw);
 }
 }
 }
