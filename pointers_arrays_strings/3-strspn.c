@@ -8,21 +8,23 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-  int max_length = _strlen(s);
+  unsigned int ans;
+  int list;
   int loop;
-  int answer;
-  unsigned int asw;
-  for (loop = 0; loop < _strlen(accept); loop++)
+  for (list = 0; s[list] != '\0'; list++)
     {
-      if (answer == max_length)
+      for (loop = 0; accept[loop] != '\0'; loop++)
 	{
-	  break;
-	}
-      if (accept[loop] == s[answer])
-	{
-	  answer++;
+	  if (s[list] == accept[loop])
+	    {
+	      ans++;
+	      break;
+	    }
+	  if (s[list] != accept[loop])
+	    {
+	      return (ans);
+	    }
 	}
     }
-  asw = answer;
-  return (asw);
+  return (ans);
 }
