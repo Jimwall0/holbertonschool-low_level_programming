@@ -10,20 +10,11 @@ unsigned int _strspn(char *s, char *accept)
 {
   unsigned int ans = 0;
   int list;
-  int loop;
   for (list = 0; s[list] != '\0'; list++)
     {
-      for (loop = 0; accept[loop] != '\0'; loop++)
+      if (s[list] == accept[ans])
 	{
-	  if (s[list] == accept[loop])
-	    {
-	      ans++;
-	      break;
-	    }
-	  if (s[list] != accept[loop])
-	    {
-	      return (ans);
-	    }
+	  ans++;
 	}
     }
   return (ans);
