@@ -7,18 +7,18 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int num;
-int loop;
-int circle;
-for (circle = 0; s[circle] != '\0'; circle++)
-{
-for (loop = 0; accept[loop] != '\0'; loop++)
-{
-if (s[circle] == accept[loop])
-{
-num++;
-}
-}
-}
-return (num);
+  unsigned int num = 0;
+  unsigned int loop = 0;
+  unsigned int subthis;
+  while (s[loop] != accept)
+    {
+      loop++;
+    }
+  subthis = loop;
+  while (s[loop] == accept)
+    {
+      loop++;
+    }
+  num = loop - subthis;
+  return (num);
 }
