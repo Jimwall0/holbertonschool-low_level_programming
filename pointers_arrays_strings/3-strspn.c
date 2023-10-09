@@ -8,9 +8,10 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-  unsigned int max_length = _strlen(s);
+  int max_length = _strlen(s);
   int loop;
-  unsigned answer;
+  int answer;
+  unsigned int asw;
   for (loop = 0; loop < _strlen(accept); loop++)
     {
       if (answer == max_length)
@@ -22,5 +23,6 @@ unsigned int _strspn(char *s, char *accept)
 	  answer++;
 	}
     }
-  return (answer);
+  asw = answer;
+  return (asw);
 }
