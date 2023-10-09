@@ -7,26 +7,19 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-  unsigned int alpha;
-  int num;
+  unsigned int max_length = _strlen(s);
   int loop;
-  char *zap;
-  for (num = 0; s[num] != '\0' && s[num] != zap[0]; num++)
+  unsigned answer;
+  for (loop = 0; loop < _strlen(accept); loop++)
     {
-      for (loop = 0; accept[loop] != '\0'; loop++)
+      if (answer == max_length)
 	{
-	  if (s[num] == accept[loop])
-	    {
-	      zap = &s[num];
-	    }
+	  break;
+	}
+      if (accept[loop] == s[answer])
+	{
+	  answer++;
 	}
     }
-  for (num = 0; zap[num] != '\0'; num++)
-    {
-      for (loop = 0; accept[loop] != '\0'; loop++)
-	{
-	  alpha = alpha + 1;
-	}
-    }
-  return (alpha);
+  return (answer);
 }
