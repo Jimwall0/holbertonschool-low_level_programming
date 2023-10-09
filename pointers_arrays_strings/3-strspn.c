@@ -8,22 +8,22 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-  unsigned int ans = 0;
-  unsigned int loop;
-  unsigned int list;
-  for (list = 0; s[list] != '\0'; list++)
-    {
-      for (loop = 0; accept[loop]; loop++)
-	{
-	  if (s[list] == accept[loop])
-	    {
-	      ans++;
-	    }
-	}
-      if (ans < list)
-	{
-	  break;
-	}
-    }
-  return (ans);
+unsigned int ans = 0;
+unsigned int loop;
+unsigned int list;
+for (list = 0; s[list] != '\0'; list++)
+{
+for (loop = 0; accept[loop]; loop++)
+{
+if (s[list] == accept[loop])
+{
+ans++;
+}
+}
+if (ans < list)
+{
+break;
+}
+}
+return (ans);
 }
