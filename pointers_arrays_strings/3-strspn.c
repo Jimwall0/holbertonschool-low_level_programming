@@ -9,12 +9,20 @@
 unsigned int _strspn(char *s, char *accept)
 {
   unsigned int ans = 0;
-  int list;
+  unsigned int loop;
+  unsigned int list;
   for (list = 0; s[list] != '\0'; list++)
     {
-      if (s[list] == accept[ans])
+      for (loop = 0; accept[loop]; loop++)
 	{
-	  ans++;
+	  if (s[list] == accept[loop])
+	    {
+	      ans++;
+	    }
+	}
+      if (ans < list)
+	{
+	  break;
 	}
     }
   return (ans);
