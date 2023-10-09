@@ -11,6 +11,7 @@ char *_strstr(char *haystack, char *needle)
 int list;
 int loop;
  int nlength;
+ char *ans;
  while (needle[nlength] != '\0')
    {
      nlength++;
@@ -21,9 +22,10 @@ int loop;
 	{
 	  if (haystack[list] == needle[loop])
 	    {
-	      if (loop == nlength - 1)
+	      if (loop >= nlength - 1)
 		{
-		  return (&haystack[list]);
+		  ans = &haystack[list];
+		  return (ans);
 		}
 	    }
 	}
