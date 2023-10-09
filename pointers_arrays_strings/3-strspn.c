@@ -7,18 +7,32 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-  unsigned int num = 0;
-  unsigned int loop = 0;
-  unsigned int subthis;
-  while (s[loop] != accept)
+  unsigned int num;
+  int loop;
+  char *zap;
+  for (num = 0; s[num] != '\0' && s[num] != zap[0]; num++)
     {
-      loop++;
+      for (loop = 0; accept[loop] != '\0'; loop++)
+	{
+	  if (s[num] == accept[loop])
+	    {
+	      zap = &s[num];
+	    }
+	}
     }
-  subthis = loop;
-  while (s[loop] == accept)
+  for (num = 0; zap[num] != '\0'; num++)
     {
-      loop++;
+      for (loop = 0; accept[loop] != '\0'; loop++)
+	{
+	  if (zap[num] == accept[loop])
+	    {
+	      break;
+	    }
+	  else
+	    {
+	      return (num);
+	    }
+	}
     }
-  num = loop - subthis;
-  return (num);
+  return (0);
 }
