@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen.c"
 /**
  * _strspn - gets the length of a prefix substring
  * @s: a portion of an array
