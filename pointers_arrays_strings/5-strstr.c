@@ -20,13 +20,10 @@ int loop;
     {
       for (loop = 0; needle[loop] != '\0'; loop++)
 	{
-	  if (haystack[list] == needle[loop])
+	  if (haystack[list] == needle[loop] && loop == nlength - 1)
 	    {
-	      if (loop >= nlength - 1)
-		{
-		  ans = &haystack[list];
-		  return (ans);
-		}
+	      ans = &haystack[list];
+	      return (ans);
 	    }
 	}
     }
