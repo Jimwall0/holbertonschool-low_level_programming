@@ -1,0 +1,17 @@
+#include "main.h"
+/**
+ * factorial - Write a function that returns the factorial of a given number
+ * @n: the number
+ * Return: the factoorial
+ */
+int factorial(int n)
+{
+  int num = 1;
+  int snum = n;
+  if (snum != num)
+    {
+      num++;
+      snum = n * factorial(n - num);
+    }
+  return (snum);
+}
