@@ -16,5 +16,5 @@ else if (n == 0)
 return (1);
 }
 num = n * factorial(n - 1);
-return num;
+return (num);
 }
