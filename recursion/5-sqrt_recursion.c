@@ -12,6 +12,12 @@ return (-1);
 }
 return (countroot(n, 0));
 }
+/**
+ * countroot - solves the listing of the roots
+ * @num: number being squared
+ * @root: number counting up and squaring
+ * Return: the asn
+ */
 int countroot(int num, int root)
 {
 if (num < 0 || root > num)
