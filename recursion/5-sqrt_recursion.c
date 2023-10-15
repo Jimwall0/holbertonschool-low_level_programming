@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 
 int countroot(int num, int root)
 {
-  if (num < 0)
+  if (num < 0 || root > num)
     {
       return (-1);
     }
