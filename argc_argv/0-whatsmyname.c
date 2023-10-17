@@ -2,6 +2,7 @@
 
 int main (int argc, char *argv[])
 {
-  printf("%s %d\n", argv[0], argc);
+  __attribute__((unused)) int unused_argc;
+  printf("%s\n", argv[0]);
   return (0);
 }
