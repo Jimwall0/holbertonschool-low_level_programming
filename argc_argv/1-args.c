@@ -7,9 +7,9 @@
  */
 int main(int argc, char *argv[])
 {
-int num = 0;
+int num = 1;
 (void) argv;
-while (num < argc)
+while (num <= argc)
 {
 num++;
 }
