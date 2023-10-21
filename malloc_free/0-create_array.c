@@ -13,7 +13,7 @@ if (size == 0)
 {
 return (NULL);
 }
-array = malloc(sizeof(int) * size);
+array = malloc(sizeof(unsigned int) * size);
 if (array == NULL)
 {
 return (NULL);
