@@ -13,6 +13,10 @@ char *create_array(unsigned int size, char c)
     {
       return (NULL);
     }
+  else if (size == 0)
+    {
+      return (NULL);
+    }
   for (num = 0; num < size; num++)
     {
       array[num] = c;
