@@ -7,20 +7,19 @@
  */
 char *create_array(unsigned int size, char c)
 {
-char *array;
-unsigned int num;
-if (size == 0)
-{
-return (NULL);
-}
-array = malloc(size) * sizeof(unsigned int);
+char *array = malloc(size * sizeof(char));
+unsigned int lint;
 if (array == NULL)
 {
 return (NULL);
 }
-for (num = 0; num < size; num++)
+if (size == 0)
 {
-array[num] = c;
+return (NULL);
+}
+for (lint = 0; lint < size; lint++)
+{
+array[lint] = c;
 }
 return (array);
 }
