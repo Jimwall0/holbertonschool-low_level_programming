@@ -8,7 +8,11 @@ char *_strdup(char *str)
 {
   int num = 0, loop = _strlen(str);
   char *array = malloc((loop * sizeof(char)) + 1);
-  if (str == NULL)
+  if (array == NULL)
+    {
+      return (NULL);
+    }
+  else if (str == NULL)
     {
       return (NULL);
     }
