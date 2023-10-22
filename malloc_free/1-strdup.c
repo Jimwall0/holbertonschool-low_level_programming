@@ -6,6 +6,7 @@
  */
 char *_strdup(char *str)
 {
+  int loop = 0;
   char *dup;
   if (str == NULL)
     {
@@ -16,6 +17,11 @@ char *_strdup(char *str)
   {
     return (NULL);
   }
+  while (loop < _strlen(str))
+    {
+      dup[loop] = str[loop];
+    }
+  dup[loop] = '\0';
   return (dup);
 }
 
