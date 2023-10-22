@@ -22,7 +22,7 @@ char *_strdup(char *str)
       num++;
     }
   array[num] = '\0';
-  return (array);
+  return (NULL);
 }
 /**
  * _strlen - checks the string length
