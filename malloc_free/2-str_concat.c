@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * str_concat - concatenates to string
- * @s1 - first string
- * @s2 - second string
+ * @s1: first string
+ * @s2: second string
  * Return: string or NULL
  */
 char *str_concat(char *s1, char *s2)
