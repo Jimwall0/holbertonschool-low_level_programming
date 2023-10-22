@@ -6,35 +6,25 @@
  */
 char *_strdup(char *str)
 {
-  int num = 0, loop = _strlen(str);
-  char *array = malloc((loop * sizeof(char)) + 1);
-  if (str == 0)
+  char *dup;
+  if (str == NULL)
     {
       return (NULL);
     }
-  if (array == NULL)
-    {
-      return (NULL);
-    }
-  while (num < loop)
-    {
-      array[num] = str[num];
-      num++;
-    }
-  array[num] = '\0';
-  return (NULL);
+  dup = malloc(sizeof(char) * (_strlen(str) + 1));
+  if (dup == NULL)
+  {
+    return (NULL);
+  }
+  return (dup);
 }
-/**
- * _strlen - checks the string length
- * @s: pointer to the string
- * Return: size of the string
- */
+
 int _strlen(char *s)
 {
-  int num = 0;
-  while (s[num] != '\0')
+  int loop = 0;
+  while (s[loop] != '\0')
     {
-      num++;
+      loop++;
     }
-  return (num);
+  return (loop);
 }
