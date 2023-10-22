@@ -6,24 +6,25 @@
  */
 char *_strdup(char *str)
 {
-  int num = 0;
-  char *array = malloc(_strlen(str) * sizeof(char));
+  int num = 0, loop = _strlen(str);
+  char *array = malloc((loop * sizeof(char)) + 1);
   if (str == NULL)
     {
       return (NULL);
     }
-  while (*str)
+  while (num < loop)
     {
       array[num] = str[num];
       num++;
     }
+  array[num] = '\0';
   return (array);
 }
 
 int _strlen(char *s)
 {
   int num = 0;
-  while (*s)
+  while (s[num] != '\0')
     {
       num++;
     }
