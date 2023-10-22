@@ -8,11 +8,11 @@ char *_strdup(char *str)
 {
   int num = 0, loop = _strlen(str);
   char *array = malloc((loop * sizeof(char)) + 1);
-  if (str == NULL)
+  if (str == 0)
     {
       return (NULL);
     }
-  else if (array == NULL)
+  if (array == NULL)
     {
       return (NULL);
     }
@@ -24,7 +24,11 @@ char *_strdup(char *str)
   array[num] = '\0';
   return (array);
 }
-
+/**
+ * _strlen - checks the string length
+ * @s: pointer to the string
+ * Return: size of the string
+ */
 int _strlen(char *s)
 {
   int num = 0;
