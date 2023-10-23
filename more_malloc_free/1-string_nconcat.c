@@ -17,7 +17,7 @@ if (s2 == NULL)
 s2len = _strlen(s2);
 s1len = _strlen(s1);
 if (n >= s2len)
-{array = malloc(s2len + s1len + 2); }
+{array = malloc(s2len + s1len + 1); }
 else
 {array = malloc(s1len + n + 2); }
 if (array == NULL)
