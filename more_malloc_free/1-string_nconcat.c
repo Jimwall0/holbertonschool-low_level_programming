@@ -40,7 +40,7 @@ num++;
 }
 else
 {
-while (num + _strlen(s1) < _strlen(s1) + n)
+while (num + _strlen(s1) < _strlen(s1) + n + 1)
 {
 array[num + _strlen(s1)] = s2[num];
 num++;
