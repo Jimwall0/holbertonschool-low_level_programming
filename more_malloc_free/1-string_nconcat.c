@@ -17,9 +17,9 @@ if (s2 == NULL)
 s2len = _strlen(s2);
 s1len = _strlen(s1);
 if (n >= s2len)
-{array = malloc(s2len + s1len); }
+{array = malloc(s2len + s1len - 1); }
 else
-{array = malloc(s1len + n + 1); }
+{array = malloc(s1len + n); }
 if (array == NULL)
 {free(array);
 return (NULL); }
@@ -53,7 +53,6 @@ unsigned int _strlen(char *c)
 {
 unsigned int num;
 for (num = 0; c[num] != '\0'; num++)
-{
-}
+{}
 return (num);
 }
