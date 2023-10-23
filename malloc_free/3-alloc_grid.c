@@ -30,15 +30,9 @@ int **alloc_grid(int width, int height)
       for (hoop = 0; hoop < width; hoop++)
 	{
 	  array[loop][hoop] = 0;
-	  if (array[loop] == NULL)
-	    {
-	      return (NULL);
-	    }
 	}
+      free(array[loop]);
     }
-  if (array == NULL)
-    {
-      return (NULL);
-    }
+  free(array);
   return (array);
 }
