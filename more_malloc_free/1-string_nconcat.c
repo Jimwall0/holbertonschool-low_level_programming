@@ -8,42 +8,46 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *array;
-unsigned int num, s1len, s2len;
-if (s1 == NULL)
-{s1 = ""; }
-if (s2 == NULL)
-{s2 = ""; }
-s2len = _strlen(s2);
-s1len = _strlen(s1);
-if (n >= s2len)
-{array = malloc(s2len + s1len - 1); }
-else
-{array = malloc(s1len + n); }
-if (array == NULL)
-{free(array);
-return (NULL); }
-for (num = 0; num < s1len; num++)
-{
-array[num] = s1[num];
+  char *array;
+  unsigned int num = 0;
+  if (s1 == NULL)
+    {
+      s1 = "";
+    }
+  if (s2 == NULL)
+    {
+      s2 = "";
+    }
+  array = malloc(_strlen(s1) + _strlen(s2));
+  if (array== NULL)
+    {
+      free(array);
+      return (array);
+    }
+  while (num < _strlen(s1))
+    {
+      array[num] = s1[num];
+      num++;
+    }
+  num = 0;
+  if (n >= _strlen(s2))
+    {
+      while (num + _strlen(s1) < _strlen(s2) + _strlen(s1))
+	{
+	  array[num + _strlen(s1)] = s2[num];
+	  num++;
+	}
+    }
+  else
+    {
+      while (num + _strlen(s1) < _strlen(s1) + n)
+	{
+	  array[num + _strlen(s1)] = s2[num];
+	  num++;
+	}
+    }
+  return (array);
 }
-if (n >= s2len)
-{
-for (num = 0; num < s2len; num++)
-{
-array[num + s1len] = s2[num];
-}
-}
-else
-{
-for (num = 0; num < n; num++)
-{
-array[num + s1len] = s2[num];
-}
-}
-return (array);
-}
-
 /**
  * _strlen - gets length of string
  * @c: string
