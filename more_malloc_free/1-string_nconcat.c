@@ -54,8 +54,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  */
 unsigned int _strlen(char *c)
 {
-unsigned int num;
-for (num = 0; c[num] != '\0'; num++)
-{}
+unsigned int num = 0;
+while (c[num] != '\0')
+{
+num++;
+}
 return (num);
 }
