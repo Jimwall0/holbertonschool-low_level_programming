@@ -46,6 +46,7 @@ array[num + _strlen(s1)] = s2[num];
 num++;
 }
 }
+array[num + _strlen(s1)] = '\0';
 return (array);
 }
 /**
