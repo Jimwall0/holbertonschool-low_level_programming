@@ -19,7 +19,7 @@ s1len = _strlen(s1);
 if (n >= s2len)
 {array = malloc(s2len + s1len + 1); }
 else
-{array = malloc(s1len + n + 2); }
+{array = malloc(s1len + n + 1); }
 if (array == NULL)
 {free(array);
 return (NULL); }
