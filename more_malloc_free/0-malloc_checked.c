@@ -9,7 +9,7 @@ void *malloc_checked(unsigned int b)
   array = malloc(b);
   if (array == NULL)
     {
-      array = malloc(98);
+      array[0] = 98;
     }
   return (array);
 }
