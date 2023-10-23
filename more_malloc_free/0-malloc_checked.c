@@ -6,7 +6,7 @@
 void *malloc_checked(unsigned int b)
 {
   unsigned int *array;
-  array = malloc(sizeof(unsigned int) * b);
+  array = malloc(b);
   if (array == NULL)
     {
       array = malloc(98);
