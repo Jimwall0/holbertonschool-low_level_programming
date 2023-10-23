@@ -2,6 +2,7 @@
 /**
  * malloc_checked - TT
  * @b: TT
+ * Return: pointer
  */
 void *malloc_checked(unsigned int b)
 {
