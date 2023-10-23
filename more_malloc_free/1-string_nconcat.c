@@ -21,7 +21,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
   array = malloc(_strlen(s1) + _strlen(s2) - 1);
   if (array== NULL)
     {
-      free(array);
       return (array);
     }
   while (num < _strlen(s1))
