@@ -11,28 +11,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 char *array;
 unsigned int num, s1len, s2len;
 if (s1 == NULL)
-{
-s1 = "";
-}
+{s1 = ""; }
 if (s2 == NULL)
-{
-s2 = "";
-}
+{s2 = ""; }
 s2len = _strlen(s2);
 s1len = _strlen(s1);
 if (n >= s2len)
-{
-array = malloc(s2len + s1len);
-}
+{array = malloc(s2len + s1len); }
 else
-{
-array = malloc(s1len + n);
-}
+{array = malloc(s1len + n); }
 if (array == NULL)
-{
-free(array);
-return (NULL);
-}
+{free(array);
+return (NULL); }
 for (num = 0; s1[num] != '\0'; num++)
 {
 array[num] = s1[num];
