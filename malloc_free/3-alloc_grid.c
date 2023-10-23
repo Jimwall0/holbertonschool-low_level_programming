@@ -12,14 +12,14 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-array = malloc(sizeof(int **) * height);
+array = malloc(sizeof(int *) * height);
 if (array == NULL)
 {
 return (NULL);
 }
 for (num = 0; num < width; num++)
 {
-array[num] = malloc(sizeof(int*) * width);
+array[num] = malloc(sizeof(int) * width);
 if (array[num] == NULL)
 {
 return (NULL);
@@ -32,5 +32,6 @@ for (hoop = 0; hoop < width; hoop++)
 array[loop][hoop] = 0;
 }
 }
+free(array);
 return (array);
 }
