@@ -23,13 +23,13 @@ else
 if (array == NULL)
 {free(array);
 return (NULL); }
-for (num = 0; s1[num] != '\0'; num++)
+ for (num = 0; num < s1len; num++)
 {
 array[num] = s1[num];
 }
 if (n >= s2len)
 {
-for (num = 0; s2[num]; num++)
+for (num = 0; num < s2len; num++)
 {
 array[num + s1len] = s2[num];
 }
@@ -41,7 +41,6 @@ for (num = 0; num < n; num++)
 array[num + s1len] = s2[num];
 }
 }
-array[num + s1len] = '\0';
 return (array);
 }
 
