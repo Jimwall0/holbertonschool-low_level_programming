@@ -36,7 +36,7 @@ array[num + s1len] = s2[num];
 }
 else
 {
-for (num = 0; num <= n; num++)
+for (num = 0; num < n; num++)
 {
 array[num + s1len] = s2[num];
 }
