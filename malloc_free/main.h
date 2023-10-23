@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+void free_grid(int **grid, int height);
 int **alloc_grid(int width, int height);
 char *str_concat(char *s1, char *s2);
 int _strlen(char *s);
