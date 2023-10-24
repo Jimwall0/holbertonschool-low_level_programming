@@ -15,7 +15,7 @@ int *array_range(int min, int max)
       free(array);
       return (NULL);
     }
-  for (; min < max; min++)
+  for (; min <= max; min++)
     {
       array[num] = min;
       num++;
