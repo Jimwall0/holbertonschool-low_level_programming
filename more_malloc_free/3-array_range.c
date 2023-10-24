@@ -1,6 +1,9 @@
 #include "main.h"
 /**
- *
+ * array_range - returns pointer to range of number
+ * @min: starting point
+ * @max: end point
+ * Return: pointer to stored location
  */
 int *array_range(int min, int max)
 {
