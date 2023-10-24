@@ -18,7 +18,7 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-array = malloc(_strlen(s1) + _strlen(s2));
+array = malloc(_strlen(s1) + _strlen(s2) + 1);
 if (array == NULL)
 {
 free(array);
