@@ -47,7 +47,6 @@ num++;
 }
 }
 array[num + _strlen(s1)] = '\0';
-return (array);
 }
 /**
  * _strlen - gets length of string
