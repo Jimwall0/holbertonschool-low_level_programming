@@ -16,14 +16,7 @@ else
 {
 printf("Name is: %s\n", d->name);
 }
-if (d->age)
-{
-printf("Age is: (nil)\n");
-}
-else
-{
 printf("Age is: %f\n", d->age);
-}
 if (d->owner == NULL)
 {
 printf("Owner is: (nil)\n");
