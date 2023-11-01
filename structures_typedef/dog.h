@@ -16,6 +16,7 @@ float age;
 char *owner;
 } dog_t;
 
+char *_strcpy(char *s, char *array2);
 int _strlen(char *s);
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
