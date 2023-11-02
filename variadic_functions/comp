@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 variadic_functions.h main.c $1 -o test
