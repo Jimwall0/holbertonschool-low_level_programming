@@ -18,13 +18,3 @@ int main(int argc, char *argv[])
   printf("%d\n", p(atoi(argv[1]), atoi(argv[3])));
   return (0);
 }
-
-int atoi(char *str)
-{
-  int num, res = 0;
-  for (num = 0; str[num] != '\0'; num++)
-    {
-      res = res * 10 + str[num] - '0';
-    }
-  return (res);
-}
