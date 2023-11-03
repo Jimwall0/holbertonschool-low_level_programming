@@ -1,0 +1,30 @@
+#include "variadic_functions.h"
+/**
+ * print_string - prints a string using variadic function
+ */
+void print_strings(const char *separator, const unsigned int n, ...)
+{
+  unsigned int num;
+  va_list names;
+  va_start(names, n);
+  if (separator == NULL)
+    {
+      for (num = 0; num < n; num++)
+	{
+	  printf("%c", va_arg(names, unsigned int));
+	}
+    }
+  else
+    {
+      for (num = 0; num < n; num++)
+	{
+	  printf("%c", va_arg(names, unsigned int));
+	  if (num != n - 1)
+	    {
+	      printf("%d", separator);
+	    }
+	}
+    }
+  printf("\n");
+  va_end(names);
+}
