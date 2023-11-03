@@ -8,7 +8,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
     {
       for (num = 0; num < n; num++)
 	{
-	  result += va_arg(numbers, const unsigned int);
+	  result = va_arg(numbers, const unsigned int);
 	  printf("%d", result);
 	}
     }
