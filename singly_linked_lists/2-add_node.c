@@ -7,14 +7,16 @@
 list_t *add_node(list_t **head, const char *str)
 {
   /*initialize node*/
-  unsigned lists_t node;
-  node = malloc(sizeof(struct list_t));
+  list_t *node;
+  node = malloc(sizeof(list_t));
+  /*check node*/
   if (node == NULL)
     {
-      return (&node);
+      free(node);
+      return (NULL);
     }
-  node->next = head;
-  node->str = strcpy(str, node->str);
-  head = node;
+  node->str = strdup(node->str, str);
+  node->next = *head;
+  *head = node;
   return (node);
 }
